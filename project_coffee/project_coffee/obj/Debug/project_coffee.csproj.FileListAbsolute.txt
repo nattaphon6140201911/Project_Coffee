@@ -1,0 +1,13 @@
+C:\Users\Asus\Desktop\project_coffee\project_coffee\bin\Debug\project_coffee.exe.config
+C:\Users\Asus\Desktop\project_coffee\project_coffee\bin\Debug\project_coffee.exe
+C:\Users\Asus\Desktop\project_coffee\project_coffee\bin\Debug\project_coffee.pdb
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.Form1.resources
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.Properties.Resources.resources
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.exe
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.pdb
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.Form2.resources
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.Form3.resources
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.Form4.resources
+C:\Users\Asus\Desktop\project_coffee\project_coffee\obj\Debug\project_coffee.Form5.resources
