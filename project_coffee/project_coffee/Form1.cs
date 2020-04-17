@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,9 +25,20 @@ namespace project_coffee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 rr = new Form2();
-            rr.Show();
+            string sql = "SELECT * FROM staffs WHERE StaffName ='" + txtUserName.Text + "' AND StaffPassword ='" + txtPassword.Text+ "' " ;
+            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            con.Open();
+            MySqlDataReader reader = cmd.ExecuteReader();
             
+            while(reader.Read())
+            {
+                this.Hide();
+                Form2 loo1 = new Form2();
+                loo1.Show();
+            }
+
+
         }
     }
 }

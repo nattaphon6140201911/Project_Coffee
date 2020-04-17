@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CustomerID = new System.Windows.Forms.TextBox();
+            this.dataG = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataG)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -42,14 +44,25 @@
             this.button1.Size = new System.Drawing.Size(50, 52);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // CustomerID
             // 
-            this.textBox1.Location = new System.Drawing.Point(271, 195);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 35);
-            this.textBox1.TabIndex = 1;
+            this.CustomerID.Location = new System.Drawing.Point(271, 195);
+            this.CustomerID.Multiline = true;
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Size = new System.Drawing.Size(214, 35);
+            this.CustomerID.TabIndex = 1;
+            // 
+            // dataG
+            // 
+            this.dataG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataG.Location = new System.Drawing.Point(114, 266);
+            this.dataG.Name = "dataG";
+            this.dataG.RowHeadersWidth = 51;
+            this.dataG.RowTemplate.Height = 24;
+            this.dataG.Size = new System.Drawing.Size(529, 87);
+            this.dataG.TabIndex = 12;
             // 
             // Form3
             // 
@@ -57,10 +70,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(804, 410);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dataG);
+            this.Controls.Add(this.CustomerID);
             this.Controls.Add(this.button1);
             this.Name = "Form3";
             this.Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)(this.dataG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,6 +84,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CustomerID;
+        private System.Windows.Forms.DataGridView dataG;
     }
 }
