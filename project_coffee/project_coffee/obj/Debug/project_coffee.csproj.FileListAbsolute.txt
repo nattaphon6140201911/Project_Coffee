@@ -33,3 +33,4 @@ C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\bi
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\bin\Debug\MySql.Data.xml
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\bin\Debug\MySql.Web.xml
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.csproj.CopyComplete
+C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form6.resources

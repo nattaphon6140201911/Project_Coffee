@@ -19,7 +19,8 @@ namespace project_coffee
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form2 pp= new Form2();
+            this.Hide();
+            Form2 pp = new Form2();
             pp.Show();
         }
     }

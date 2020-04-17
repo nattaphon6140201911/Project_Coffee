@@ -36,5 +36,15 @@ namespace project_coffee
             MessageBox.Show("fff");
            
         }
+
+        private void dataG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataG.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
