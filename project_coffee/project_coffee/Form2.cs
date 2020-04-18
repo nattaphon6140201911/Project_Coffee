@@ -48,20 +48,32 @@ namespace project_coffee
 
         private void button8_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM customers WHERE CustomerID ='" + CustomerID.Text + "' ";
+           
+        }
 
-            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
-            MySqlCommand cmd = new MySqlCommand(sql, con);
-            con.Open();
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+            
+        }
 
-            DataSet ds = new DataSet();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(ds);
-            dataG.DataSource = ds.Tables[0].DefaultView;
+        private void time_Tick(object sender, EventArgs e)
+        {
+            time2.Text = DateTime.Now.ToString();
+        }
 
-            con.Close();
+        private void lbl_id_Click(object sender, EventArgs e)
+        {
+           
+        }
 
-            MessageBox.Show("fff");
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
