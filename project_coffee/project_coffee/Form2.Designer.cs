@@ -54,7 +54,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataG = new System.Windows.Forms.DataGridView();
             this.button9 = new System.Windows.Forms.Button();
             this.CustomerID = new System.Windows.Forms.TextBox();
@@ -62,6 +61,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -256,43 +258,40 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(39, 22);
             this.numericUpDown3.TabIndex = 14;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
             // button8
             // 
+            this.button8.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(280, 421);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(70, 23);
+            this.button8.Size = new System.Drawing.Size(44, 35);
             this.button8.TabIndex = 15;
-            this.button8.Text = "button8";
+            this.button8.Text = "สั่ง";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(1003, 422);
+            this.button11.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(1015, 423);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(70, 23);
+            this.button11.Size = new System.Drawing.Size(44, 33);
             this.button11.TabIndex = 18;
-            this.button11.Text = "button11";
+            this.button11.Text = "สั่ง";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(646, 421);
+            this.button12.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(648, 422);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(70, 23);
+            this.button12.Size = new System.Drawing.Size(44, 35);
             this.button12.TabIndex = 19;
-            this.button12.Text = "button12";
+            this.button12.Text = "สั่ง";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(372, 423);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 22);
-            this.textBox1.TabIndex = 22;
             // 
             // dataG
             // 
@@ -326,7 +325,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(503, 70);
+            this.textBox2.Location = new System.Drawing.Point(544, 70);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(148, 25);
@@ -334,7 +333,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(503, 27);
+            this.textBox3.Location = new System.Drawing.Point(544, 27);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(145, 25);
@@ -360,12 +359,44 @@
             this.label2.TabIndex = 29;
             this.label2.Text = "CustomerType";
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(304, 787);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(68, 31);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "ลบ";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(270, 791);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(28, 22);
+            this.textBox4.TabIndex = 31;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(762, 699);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(222, 72);
+            this.button10.TabIndex = 32;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1202, 953);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
@@ -373,7 +404,6 @@
             this.Controls.Add(this.CustomerID);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.dataG);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
@@ -425,7 +455,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataG;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox CustomerID;
@@ -433,5 +462,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button10;
     }
 }

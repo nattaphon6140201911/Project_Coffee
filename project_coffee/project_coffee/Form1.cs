@@ -49,8 +49,6 @@ namespace project_coffee
         public string SensData()
         {
             return txtUserName.Text;
-
-
         }
         
     }
