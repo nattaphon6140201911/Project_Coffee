@@ -25,6 +25,11 @@ namespace project_coffee
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            List<string> tre = new List<string>();
+            List<string> re = new List<string>();
+
+
             string sql = "SELECT * FROM staffs WHERE StaffName ='" + txtUserName.Text + "' AND StaffPassword ='" + txtPassword.Text+ "' " ;
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
@@ -32,13 +37,21 @@ namespace project_coffee
             MySqlDataReader reader = cmd.ExecuteReader();
             
             while(reader.Read())
+
             {
                 this.Hide();
                 Form2 loo1 = new Form2();
                 loo1.Show();
-            }
+                loo1.GetData(SensData());   
+            }          
+
+        }
+        public string SensData()
+        {
+            return txtUserName.Text;
 
 
         }
+        
     }
 }
