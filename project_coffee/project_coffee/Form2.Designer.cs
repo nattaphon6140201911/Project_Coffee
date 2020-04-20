@@ -55,15 +55,13 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.dataG = new System.Windows.Forms.DataGridView();
-            this.button9 = new System.Windows.Forms.Button();
-            this.CustomerID = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
+            this.CustomerID = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -75,7 +73,7 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(840, 168);
+            this.button2.Location = new System.Drawing.Point(863, 130);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(233, 248);
             this.button2.TabIndex = 1;
@@ -85,7 +83,7 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(483, 168);
+            this.button3.Location = new System.Drawing.Point(484, 130);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(233, 248);
             this.button3.TabIndex = 2;
@@ -107,7 +105,7 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(117, 168);
+            this.button1.Location = new System.Drawing.Point(118, 130);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(233, 248);
             this.button1.TabIndex = 6;
@@ -116,12 +114,13 @@
             // 
             // button7
             // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(753, 617);
+            this.button7.Location = new System.Drawing.Point(816, 580);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(123, 36);
+            this.button7.Size = new System.Drawing.Size(49, 42);
             this.button7.TabIndex = 9;
-            this.button7.Text = "Check";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -225,7 +224,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(218, 423);
+            this.numericUpDown1.Location = new System.Drawing.Point(219, 385);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10,
             0,
@@ -237,7 +236,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(945, 422);
+            this.numericUpDown2.Location = new System.Drawing.Point(944, 383);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             10,
             0,
@@ -249,7 +248,7 @@
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(585, 422);
+            this.numericUpDown3.Location = new System.Drawing.Point(575, 385);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             10,
             0,
@@ -263,7 +262,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(280, 421);
+            this.button8.Location = new System.Drawing.Point(281, 383);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(44, 35);
             this.button8.TabIndex = 15;
@@ -274,7 +273,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(1015, 423);
+            this.button11.Location = new System.Drawing.Point(1016, 383);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(44, 33);
             this.button11.TabIndex = 18;
@@ -285,7 +284,7 @@
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(648, 422);
+            this.button12.Location = new System.Drawing.Point(649, 384);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(44, 35);
             this.button12.TabIndex = 19;
@@ -296,73 +295,17 @@
             // dataG
             // 
             this.dataG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataG.Location = new System.Drawing.Point(47, 511);
+            this.dataG.Location = new System.Drawing.Point(48, 473);
             this.dataG.Name = "dataG";
             this.dataG.RowHeadersWidth = 51;
             this.dataG.RowTemplate.Height = 24;
             this.dataG.Size = new System.Drawing.Size(534, 269);
             this.dataG.TabIndex = 23;
             // 
-            // button9
-            // 
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Location = new System.Drawing.Point(256, 36);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(49, 42);
-            this.button9.TabIndex = 24;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // CustomerID
-            // 
-            this.CustomerID.Location = new System.Drawing.Point(170, 46);
-            this.CustomerID.Multiline = true;
-            this.CustomerID.Name = "CustomerID";
-            this.CustomerID.Size = new System.Drawing.Size(66, 25);
-            this.CustomerID.TabIndex = 25;
-            this.CustomerID.TextChanged += new System.EventHandler(this.CustomerID_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(544, 70);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 25);
-            this.textBox2.TabIndex = 26;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(544, 27);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(145, 25);
-            this.textBox3.TabIndex = 27;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(369, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 17);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(369, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 17);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "CustomerType";
-            // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(304, 787);
+            this.button4.Location = new System.Drawing.Point(305, 749);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(68, 31);
             this.button4.TabIndex = 30;
@@ -372,21 +315,61 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(270, 791);
+            this.textBox4.Location = new System.Drawing.Point(271, 753);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(28, 22);
             this.textBox4.TabIndex = 31;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(860, 385);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 17);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "50 Baht";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(481, 385);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 17);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "50 Baht";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(115, 384);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 17);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "50 Baht";
+            // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(762, 699);
+            this.button10.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(421, 753);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(222, 72);
-            this.button10.TabIndex = 32;
-            this.button10.Text = "button10";
+            this.button10.Size = new System.Drawing.Size(123, 36);
+            this.button10.TabIndex = 37;
+            this.button10.Text = "Check";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.button10_Click_2);
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.Location = new System.Drawing.Point(732, 594);
+            this.CustomerID.Multiline = true;
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Size = new System.Drawing.Size(66, 25);
+            this.CustomerID.TabIndex = 25;
+            this.CustomerID.TextChanged += new System.EventHandler(this.CustomerID_TextChanged);
             // 
             // Form2
             // 
@@ -395,14 +378,12 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1202, 953);
             this.Controls.Add(this.button10);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.CustomerID);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.dataG);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button12);
@@ -456,14 +437,12 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.DataGridView dataG;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox CustomerID;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox CustomerID;
     }
 }
