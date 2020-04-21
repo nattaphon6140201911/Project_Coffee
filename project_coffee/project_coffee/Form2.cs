@@ -13,11 +13,20 @@ namespace project_coffee
 {
     public partial class Form2 : Form
     {
+
         static string salid = "";
         static string salid2 = "";
+        static string bnn = "";
+
+
+
         public Form2()
         {
             InitializeComponent();
+            string oo;
+            Random rnd = new Random();
+            salid = rnd.Next(1000, 9999).ToString();
+            textBox1.Text = salid;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -100,11 +109,7 @@ namespace project_coffee
 
         private void button8_Click_1(object sender, EventArgs e)
         {
-            string oo;
-            Random rnd = new Random();
-            salid = rnd.Next(1000, 9999).ToString();
-            oo = salid;
-
+      
             string oo2;
             Random rnd2 = new Random();
             salid2 = rnd2.Next(100, 999).ToString();
@@ -140,15 +145,39 @@ namespace project_coffee
 
 
 
-            string sql = "SELECT * FROM sale_details";
-            sql = "INSERT INTO sale_details (SaleDetailID,SaleID,ProductID,Price,Amount) VALUES('" + oo2 + " ','" + oo + "','11','50','" + x2 + "')";
+            string x4 = (numericUpDown1.Text);
+            int b = 50 * Convert.ToInt32(x4);
 
+            bnn = b.ToString();
+
+            string sql = "SELECT * FROM sale_details";
+            sql = "INSERT INTO sale_details (SaleDetailID,SaleID,ProductID,Price,Quantity,Amount) VALUES('" + oo2 + " ','" + textBox1.Text + "','11','50','" + x2 + "','" + b + "')";
+            
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
             con.Open();
 
+            
+            textBox2.Text = bnn;
+
             cmd.ExecuteNonQuery();
             con.Close();
+
+
+
+            
+
+            /*string sql3 = "SELECT * FROM sales";
+            sql3 = "INSERT INTO sales (SaleID,SaleDateTime,CustomerID,StaffID,GrandTotal) VALUES('" + textBox1.Text + " ','" + time2.Text + "','11','"+lbl_id.Text+"','xx')";
+
+            MySqlConnection con3 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd3 = new MySqlCommand(sql3, con3);
+            con3.Open();
+
+            cmd3.ExecuteNonQuery();
+            con3.Close();*/
+
+
 
 
 
@@ -161,10 +190,7 @@ namespace project_coffee
 
         private void button12_Click(object sender, EventArgs e)
         {
-            string oo;
-            Random rnd = new Random();
-            salid = rnd.Next(1000, 9999).ToString();
-            oo = salid;
+            
 
             string oo2;
             Random rnd2 = new Random();
@@ -200,9 +226,11 @@ namespace project_coffee
 
 
 
+            string x4 = (numericUpDown2.Text);
+            int b = 50 * Convert.ToInt32(x4);
 
             string sql = "SELECT * FROM sale_details";
-            sql = "INSERT INTO sale_details (SaleDetailID,SaleID,ProductID,Price,Amount) VALUES('" + oo2 + " ','" + oo + "','22','50','" + x2 + "')";
+            sql = "INSERT INTO sale_details (SaleDetailID,SaleID,ProductID,Price,Quantity,Amount) VALUES('" + oo2 + " ','" + textBox1.Text + "','22','50','" + x2 + "','" + b +" ')";
 
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
@@ -211,14 +239,26 @@ namespace project_coffee
             cmd.ExecuteNonQuery();
             con.Close();
 
+
+
+            
+
+           /* string sql3 = "SELECT * FROM sales";
+            sql3 = "INSERT INTO sales (SaleID,SaleDateTime,CustomerID,StaffID,GrandTotal) VALUES('" + textBox1.Text + " ','" + time2.Text + "','11','" + lbl_id.Text + "','xx')";
+
+            MySqlConnection con3 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd3 = new MySqlCommand(sql3, con3);
+            con3.Open();
+
+            cmd3.ExecuteNonQuery();
+            con3.Close();*/
+
+
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            string oo;
-            Random rnd = new Random();
-            salid = rnd.Next(1000, 9999).ToString();
-            oo = salid;
+            
 
             string oo2;
             Random rnd2 = new Random();
@@ -253,10 +293,11 @@ namespace project_coffee
             con2.Close();
 
 
-
+            string x4 = (numericUpDown2.Text);
+            int b = 50 * Convert.ToInt32(x4);
 
             string sql = "SELECT * FROM sale_details";
-            sql = "INSERT INTO sale_details (SaleDetailID,SaleID,ProductID,Price,Amount) VALUES('" + oo2 + " ','" + oo + "','33','50','" + x2 + "')";
+            sql = "INSERT INTO sale_details (SaleDetailID,SaleID,ProductID,Price,Quantity,Amount) VALUES('" + oo2 + " ','" + textBox1.Text + "','33','50','" + x2 + "','" + b + "')" ;
 
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
@@ -264,6 +305,21 @@ namespace project_coffee
 
             cmd.ExecuteNonQuery();
             con.Close();
+
+
+            
+
+            /*string sql3 = "SELECT * FROM sales";
+            sql3 = "INSERT INTO sales (SaleID,SaleDateTime,CustomerID,StaffID,GrandTotal) VALUES('" + textBox1.Text + " ','" + time2.Text + "','11','" + lbl_id.Text + "',' xx ')";
+
+            MySqlConnection con3 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd3 = new MySqlCommand(sql3, con3);
+            con3.Open();
+
+            cmd3.ExecuteNonQuery();
+            con3.Close();*/
+
+
         }
         public void GetData(string str)
         {
@@ -417,6 +473,20 @@ namespace project_coffee
         }
 
         private void button10_Click_2(object sender, EventArgs e)
+        {
+            string sql5 = "SELECT * FROM sale00";
+
+            MySqlConnection con5 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd5 = new MySqlCommand(sql5, con5);
+            con5.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd5);
+            da.Fill(ds);
+            dataG.DataSource = ds.Tables[0].DefaultView;
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
         }
