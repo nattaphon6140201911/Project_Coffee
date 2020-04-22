@@ -37,8 +37,6 @@ namespace project_coffee
 
 
 
-
-
             string sql = "SELECT * FROM customers ";
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
@@ -47,16 +45,24 @@ namespace project_coffee
 
             while (reader.Read())
             {
+                
                 if (str == reader.GetString("CustomerID"))
                 {
                     textBox7.Text = reader.GetString("CustomerName");
                     textBox8.Text = reader.GetString("CustomerType");
+
 
                 }
             }
 
 
             con.Close();
+        }
+
+
+        public void GetData3(string str)
+        {
+            textBox5.Text = str;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,5 +96,24 @@ namespace project_coffee
                 }
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string sql1 = "SELECT * FROM sale00";
+            sql1 = "DELETE FROM sale00 ";
+
+            MySqlConnection con1 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd1 = new MySqlCommand(sql1, con1);
+
+
+            con1.Open();
+            cmd1.ExecuteNonQuery();
+            con1.Close();
+
+            this.Hide();
+            
+            
+        }
+        
     }
 }
