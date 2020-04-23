@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -42,13 +41,10 @@
             this.lbl_name = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbl_Lv = new System.Windows.Forms.ToolStripStatusLabel();
-            this.time1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.time2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.CustomerID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataG)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +82,7 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.White;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
@@ -95,9 +92,7 @@
             this.toolStripStatusLabel8,
             this.lbl_name,
             this.toolStripStatusLabel6,
-            this.lbl_Lv,
-            this.time1,
-            this.time2});
+            this.lbl_Lv});
             this.statusStrip1.Location = new System.Drawing.Point(0, 688);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(736, 26);
@@ -153,25 +148,9 @@
             this.lbl_Lv.Size = new System.Drawing.Size(30, 20);
             this.lbl_Lv.Text = "xxx";
             // 
-            // time1
-            // 
-            this.time1.Name = "time1";
-            this.time1.Size = new System.Drawing.Size(49, 20);
-            this.time1.Text = "Time :";
-            // 
-            // time2
-            // 
-            this.time2.AutoSize = false;
-            this.time2.Name = "time2";
-            this.time2.Size = new System.Drawing.Size(300, 20);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // CustomerID
             // 
-            this.CustomerID.Location = new System.Drawing.Point(284, 109);
+            this.CustomerID.Location = new System.Drawing.Point(28, 111);
             this.CustomerID.Multiline = true;
             this.CustomerID.Name = "CustomerID";
             this.CustomerID.Size = new System.Drawing.Size(170, 26);
@@ -181,9 +160,9 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(469, 96);
+            this.button1.Location = new System.Drawing.Point(220, 105);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 52);
+            this.button1.Size = new System.Drawing.Size(35, 34);
             this.button1.TabIndex = 41;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -199,19 +178,24 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click_1);
             // 
-            // dateTimePicker1
+            // button9
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 109);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(252, 22);
-            this.dateTimePicker1.TabIndex = 43;
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.Location = new System.Drawing.Point(593, 12);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(58, 57);
+            this.button9.TabIndex = 43;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(736, 714);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CustomerID);
@@ -244,12 +228,9 @@
         private System.Windows.Forms.ToolStripStatusLabel lbl_name;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
         private System.Windows.Forms.ToolStripStatusLabel lbl_Lv;
-        private System.Windows.Forms.ToolStripStatusLabel time1;
-        private System.Windows.Forms.ToolStripStatusLabel time2;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox CustomerID;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button9;
     }
 }

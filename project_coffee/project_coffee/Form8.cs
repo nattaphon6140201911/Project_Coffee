@@ -20,7 +20,7 @@ namespace project_coffee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM staffs WHERE StaffName ='" + txtUserName.Text + "' AND StaffPassword ='" + txtPassword.Text + "'AND StaffLevel = 'Admin' ";
+            string sql = "SELECT * FROM staffs WHERE StaffName ='" + txtUserName.Text + "' AND StaffPassword ='" + txtPassword.Text + "'AND StaffLevel != 'Staff' ";
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
             con.Open();

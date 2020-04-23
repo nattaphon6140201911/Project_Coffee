@@ -18,7 +18,8 @@ namespace project_coffee
         static string salid2 = "";
         static string bnn = "";
         static string salid1 = "";
-        
+        static string bnn1 = "";
+
 
 
         public Form2()
@@ -149,7 +150,7 @@ namespace project_coffee
       
             string oo2;
             Random rnd2 = new Random();
-            salid2 = rnd2.Next(100, 999).ToString();
+            salid2 = rnd2.Next(10000, 99999).ToString();
             oo2 = salid2;
 
             string sql1 = "SELECT * FROM sale00";
@@ -236,7 +237,7 @@ namespace project_coffee
 
             string oo2;
             Random rnd2 = new Random();
-            salid2 = rnd2.Next(100, 999).ToString();
+            salid2 = rnd2.Next(10000, 99999).ToString();
             oo2 = salid2;
 
             string sql1 = "SELECT * FROM sale00";
@@ -311,7 +312,7 @@ namespace project_coffee
 
             string oo2;
             Random rnd2 = new Random();
-            salid2 = rnd2.Next(100, 999).ToString();
+            salid2 = rnd2.Next(10000, 99999).ToString();
             oo2 = salid2;
 
             string sql1 = "SELECT * FROM sale00";
@@ -468,6 +469,8 @@ namespace project_coffee
             cmd1.ExecuteNonQuery();
             con1.Close();
 
+            textBox4.Text = "";
+
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -482,8 +485,7 @@ namespace project_coffee
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Form6 aa = new Form6();
-            aa.Show();
+            
         }
 
         private void button10_Click_1(object sender, EventArgs e)
@@ -561,6 +563,19 @@ namespace project_coffee
         {
             Form10 gg = new Form10();
             gg.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            string x4 = (numericUpDown4.Text);
+            int b = 50 * Convert.ToInt32(x4);            
+            int ddf = Convert.ToInt32(textBox2.Text);
+            ddf -= b;
+            bnn1 = ddf.ToString();
+
+            textBox2.Text = bnn1;
+
+            numericUpDown4.Text = "0";
         }
     }
 }

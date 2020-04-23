@@ -85,7 +85,7 @@ namespace project_coffee
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            time2.Text = DateTime.Now.ToString();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -116,6 +116,12 @@ namespace project_coffee
             MySqlDataAdapter da = new MySqlDataAdapter(cmd5);
             da.Fill(ds);
             dataG.DataSource = ds.Tables[0].DefaultView;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form11 rr = new Form11();
+            rr.Show();
         }
     }    
 }
