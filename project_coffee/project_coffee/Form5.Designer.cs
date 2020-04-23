@@ -31,14 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.dataG = new System.Windows.Forms.DataGridView();
-            this.button10 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbl_id = new System.Windows.Forms.ToolStripStatusLabel();
@@ -51,6 +45,10 @@
             this.time1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.time2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.CustomerID = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataG)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,49 +56,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(296, 36);
+            this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(311, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 28);
+            this.label1.Size = new System.Drawing.Size(109, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "รายการ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 603);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ยอดขาย";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(180, 89);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(309, 447);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(209, 593);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 38);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(465, 603);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 28);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "บาท";
             // 
             // button6
             // 
@@ -113,33 +74,15 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(573, 562);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(102, 22);
-            this.textBox3.TabIndex = 12;
-            // 
             // dataG
             // 
             this.dataG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataG.Location = new System.Drawing.Point(101, 89);
+            this.dataG.Location = new System.Drawing.Point(12, 167);
             this.dataG.Name = "dataG";
             this.dataG.RowHeadersWidth = 51;
             this.dataG.RowTemplate.Height = 24;
-            this.dataG.Size = new System.Drawing.Size(511, 447);
+            this.dataG.Size = new System.Drawing.Size(712, 411);
             this.dataG.TabIndex = 24;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(573, 595);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(123, 36);
-            this.button10.TabIndex = 38;
-            this.button10.Text = "Check";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // statusStrip1
             // 
@@ -226,20 +169,55 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // CustomerID
+            // 
+            this.CustomerID.Location = new System.Drawing.Point(284, 109);
+            this.CustomerID.Multiline = true;
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Size = new System.Drawing.Size(170, 26);
+            this.CustomerID.TabIndex = 40;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(469, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 52);
+            this.button1.TabIndex = 41;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(284, 608);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(123, 36);
+            this.button10.TabIndex = 42;
+            this.button10.Text = "Check";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 109);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(252, 22);
+            this.dateTimePicker1.TabIndex = 43;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 714);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button10);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CustomerID);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dataG);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form5";
             this.Text = "Form5";
@@ -255,14 +233,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DataGridView dataG;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel lbl_id;
@@ -275,5 +247,9 @@
         private System.Windows.Forms.ToolStripStatusLabel time1;
         private System.Windows.Forms.ToolStripStatusLabel time2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox CustomerID;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

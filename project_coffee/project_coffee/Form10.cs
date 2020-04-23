@@ -13,22 +13,27 @@ namespace project_coffee
 {
     public partial class Form10 : Form
     {
+        static string salid = "";
         public Form10()
         {
             InitializeComponent();
+            Random rnd = new Random();
+            salid = rnd.Next(100, 999).ToString();
+            textBox1.Text = salid;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM sale_details";
-            sql = "INSERT INTO sale_details (CustomerID,CustomerName,Gender,CustomerType,CustomerTelNo) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + comboBox1.Text + "','" + comboBox2.Text + "','" + textBox3.Text + "')";
+            string sql = "SELECT * FROM customers";
+            sql = "INSERT INTO customers (CustomerID,CustomerName,Gender,CustomerType,CustomerTelNo) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + comboBox1.Text + "','" + comboBox2.Text + "','" + textBox3.Text + "')";
 
             MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd = new MySqlCommand(sql, con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-
+            MessageBox.Show("สมัครสำเร็จ IDของคุณคือ "+salid);
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -54,6 +59,11 @@ namespace project_coffee
                 MessageBox.Show("กรุณากรอกเป็นตัวเลขเท่านั้น");
 
             }
+        }
+
+        private void Form10_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

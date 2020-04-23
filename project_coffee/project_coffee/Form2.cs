@@ -18,7 +18,7 @@ namespace project_coffee
         static string salid2 = "";
         static string bnn = "";
         static string salid1 = "";
-
+        
 
 
         public Form2()
@@ -48,14 +48,7 @@ namespace project_coffee
 
         private void button7_Click(object sender, EventArgs e)
         {
-            string sql3 = "SELECT * FROM sales";
-            sql3 = "INSERT INTO sales (SaleID,SaleDateTime,CustomerID,StaffID,GrandTotal) VALUES('" + textBox1.Text + " ','" + time2.Text + "','11','" + lbl_id.Text + "','" + textBox2.Text + "')";
-
-            MySqlConnection con3 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
-            MySqlCommand cmd3 = new MySqlCommand(sql3, con3);
-            con3.Open();
-
-            cmd3.ExecuteNonQuery();
+            
             
 
 
@@ -68,24 +61,34 @@ namespace project_coffee
             while (reader.Read())
 
             {
+                string sql3 = "SELECT * FROM sales";
+                sql3 = "INSERT INTO sales (SaleID,SaleDateTime,CustomerID,StaffID,GrandTotal) VALUES('" + textBox1.Text + " ','" + dateTimePicker1.Value + "','" + CustomerID.Text + "','" + lbl_id.Text + "','" + textBox2.Text + "')";
+
+
+                MySqlConnection con3 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+                MySqlCommand cmd3 = new MySqlCommand(sql3, con3);
+                con3.Open();
+
+                cmd3.ExecuteNonQuery();
+
                 Form4 gg = new Form4();
                 gg.Show();
                 gg.GetData2(SensData2());
                 gg.GetData3(SensData3());
-                
+                CustomerID.Text = "";
+                numericUpDown1.Text = "0";
+                numericUpDown2.Text = "0";
+                numericUpDown3.Text = "0";
+
+                textBox2.Text = "0";
+
+
+                Random rnd = new Random();
+                salid = rnd.Next(1000, 9999).ToString();
+                textBox1.Text = salid;
             }
 
-            CustomerID.Text = "";
-            numericUpDown1.Text = "0";
-            numericUpDown2.Text = "0";
-            numericUpDown3.Text = "0";
-           
-            textBox2.Text = "0";
-
-
-            Random rnd = new Random();
-            salid = rnd.Next(1000, 9999).ToString();
-            textBox1.Text = salid;
+            
 
 
 

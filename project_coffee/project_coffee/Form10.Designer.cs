@@ -48,7 +48,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(178, 246);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(209, 24);
             this.textBox1.TabIndex = 0;
@@ -66,6 +66,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(178, 340);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.MaxLength = 10;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(209, 24);
             this.textBox3.TabIndex = 5;
@@ -193,6 +194,7 @@
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form10";
+            this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

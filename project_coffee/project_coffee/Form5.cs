@@ -87,6 +87,35 @@ namespace project_coffee
         {
             time2.Text = DateTime.Now.ToString();
         }
-    }
-    
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM sales WHERE SaleDateTime LIKE  '%" + CustomerID.Text + "%' ";
+
+            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            con.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(ds);
+            dataG.DataSource = ds.Tables[0].DefaultView;
+
+            con.Close();
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            string sql5 = "SELECT * FROM sales";
+
+            MySqlConnection con5 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd5 = new MySqlCommand(sql5, con5);
+            con5.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd5);
+            da.Fill(ds);
+            dataG.DataSource = ds.Tables[0].DefaultView;
+        }
+    }    
 }
