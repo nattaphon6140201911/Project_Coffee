@@ -38,3 +38,4 @@ C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\ob
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form8.resources
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form10.resources
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form11.resources
+C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form6.resources

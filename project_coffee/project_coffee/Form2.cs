@@ -168,7 +168,7 @@ namespace project_coffee
 
 
             string x2 = numericUpDown1.Text;
-            MessageBox.Show(x2);
+            MessageBox.Show("Espresso "+ x2 +" แก้ว");
 
             string sql2 = "SELECT * FROM sale00";
             sql2 = "INSERT INTO sale00 (SaleDetailID,ProductName,Price,Amount) VALUES('" + oo2 + "','Espresso','50','" + x2 + "')";
@@ -255,7 +255,7 @@ namespace project_coffee
 
 
             string x2 = numericUpDown3.Text;
-            MessageBox.Show(x2);
+            MessageBox.Show("Americano " + x2 + " แก้ว");
 
             string sql2 = "SELECT * FROM sale00";
             sql2 = "INSERT INTO sale00 (SaleDetailID,ProductName,Price,Amount) VALUES('" + oo2 + "','Americano','50','" + x2 + "')";
@@ -330,7 +330,7 @@ namespace project_coffee
 
 
             string x2 = numericUpDown2.Text;
-            MessageBox.Show(x2);
+            MessageBox.Show("Cappuccino " + x2 + " แก้ว");
 
             string sql2 = "SELECT * FROM sale00";
             sql2 = "INSERT INTO sale00 (SaleDetailID,ProductName,Price,Amount) VALUES('" + oo2 + "','Cappuccino','50','" + x2 + "')";
@@ -470,6 +470,16 @@ namespace project_coffee
             con1.Close();
 
             textBox4.Text = "";
+
+            string x4 = (numericUpDown4.Text);
+            int b = 50 * Convert.ToInt32(x4);
+            int ddf = Convert.ToInt32(textBox2.Text);
+            ddf -= b;
+            bnn1 = ddf.ToString();
+
+            textBox2.Text = bnn1;
+
+            numericUpDown4.Text = "0";
 
         }
 

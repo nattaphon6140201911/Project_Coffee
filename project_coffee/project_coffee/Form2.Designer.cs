@@ -69,7 +69,6 @@
             this.button9 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.button13 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -438,7 +437,7 @@
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(87, 753);
+            this.numericUpDown4.Location = new System.Drawing.Point(219, 753);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             10,
             0,
@@ -448,24 +447,12 @@
             this.numericUpDown4.Size = new System.Drawing.Size(39, 22);
             this.numericUpDown4.TabIndex = 44;
             // 
-            // button13
-            // 
-            this.button13.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(149, 747);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(68, 31);
-            this.button13.TabIndex = 45;
-            this.button13.Text = "ลบ";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1202, 953);
-            this.Controls.Add(this.button13);
             this.Controls.Add(this.numericUpDown4);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox1);
@@ -549,6 +536,5 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Button button13;
     }
 }

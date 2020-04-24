@@ -33,6 +33,9 @@ namespace project_coffee
                 Form5 loo1 = new Form5();
                 loo1.Show();
                 loo1.GetData(SensData());
+                loo1.GetData1(SensData1());
+                loo1.GetData2(SensData2());
+
             }
 
             
@@ -40,6 +43,16 @@ namespace project_coffee
 
         }
         public string SensData()
+        {
+            return txtUserName.Text;
+        }
+
+        public string SensData1()
+        {
+            return txtUserName.Text;
+        }
+
+        public string SensData2()
         {
             return txtUserName.Text;
         }

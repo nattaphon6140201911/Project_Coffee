@@ -39,8 +39,18 @@ namespace project_coffee
 
             while (reader.Read())
             {
+                string sql2 = "SELECT * FROM staffs1";
+                /*sql2 = "INSERT INTO staffs1 (StaffID.,StaffCode,StaffName,Gender,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + comboBox2.Text + "')";*/
+                sql2 = "INSERT INTO `staffs1`(`StaffID.`, `StaffCode`, `StaffName`, `Gender`, `StaffLevel`) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + comboBox1.Text + "', '" + comboBox2.Text + "')";
+                MySqlConnection con2 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+                MySqlCommand cmd2 = new MySqlCommand(sql2, con2);
+                con2.Open();
+                cmd2.ExecuteNonQuery();
+                con2.Close();
+
+
                 string sql = "SELECT * FROM staffs";
-                sql = "INSERT INTO staffs (StaffID,StaffCode,StaffName,	Gender,StaffPassword,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + textBox4.Text + "','" + comboBox2.Text + "')";
+                sql = "INSERT INTO staffs (StaffID,StaffCode,StaffName,Gender,StaffPassword,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + textBox4.Text + "','" + comboBox2.Text + "')";
 
                 MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
                 MySqlCommand cmd = new MySqlCommand(sql, con);

@@ -111,6 +111,7 @@ namespace project_coffee
             con1.Close();
 
             this.Hide();
+            MessageBox.Show("ทำรายการเรียบร้อย");
             
             
         }
