@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 23, 2020 at 02:47 PM
+-- Generation Time: Apr 24, 2020 at 10:01 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -100,6 +100,7 @@ CREATE TABLE `sales` (
 --
 
 INSERT INTO `sales` (`SaleID`, `SaleDateTime`, `CustomerID`, `StaffID`, `GrandTotal`) VALUES
+(1093, '2020-04-23 10:36:19', 101, 1, 200),
 (1717, '2020-04-23 09:18:19', 101, 1, 200),
 (1919, '2020-04-01 08:48:32', 101, 1, 350),
 (2842, '2020-04-18 08:48:32', 102, 1, 350),
@@ -110,7 +111,11 @@ INSERT INTO `sales` (`SaleID`, `SaleDateTime`, `CustomerID`, `StaffID`, `GrandTo
 (5913, '2020-04-23 09:13:57', 101, 1, 100),
 (6632, '2020-04-23 09:38:28', 101, 1, 300),
 (7022, '2020-04-10 08:48:32', 103, 1, 50),
-(7254, '2020-04-01 08:48:32', 102, 1, 300);
+(7254, '2020-04-01 08:48:32', 102, 1, 300),
+(7742, '2020-04-24 03:37:44', 102, 3, 100),
+(7935, '2020-04-23 10:21:17', 101, 1, 100),
+(8134, '2020-04-23 10:30:35', 101, 1, 100),
+(8311, '2020-04-24 03:35:13', 103, 1, 100);
 
 -- --------------------------------------------------------
 
@@ -137,14 +142,17 @@ INSERT INTO `sale_details` (`SaleDetailID`, `SaleID`, `ProductID`, `Price`, `Qua
 (14501, 2842, 22, 50, 3, 150),
 (16968, 5913, 11, 50, 2, 100),
 (17999, 7254, 22, 50, 2, 100),
+(21396, 8311, 11, 50, 2, 100),
 (23368, 6632, 33, 50, 2, 100),
 (24871, 3072, 33, 50, 4, 200),
 (27681, 6632, 11, 50, 2, 100),
 (27699, 4535, 22, 50, 2, 100),
 (27842, 1919, 11, 50, 3, 150),
 (28863, 1717, 11, 50, 2, 100),
+(39304, 1093, 22, 50, 2, 100),
 (40474, 3072, 22, 50, 2, 100),
 (41855, 7254, 33, 50, 2, 100),
+(48037, 1093, 11, 50, 2, 100),
 (53999, 4535, 11, 50, 2, 100),
 (63501, 3198, 33, 50, 2, 100),
 (64096, 6632, 22, 50, 2, 100),
@@ -153,8 +161,10 @@ INSERT INTO `sale_details` (`SaleDetailID`, `SaleID`, `ProductID`, `Price`, `Qua
 (68488, 5336, 11, 50, 2, 100),
 (69096, 3198, 11, 50, 2, 100),
 (75466, 5336, 33, 50, 2, 100),
+(76846, 7742, 11, 50, 2, 100),
 (77113, 1919, 22, 50, 2, 100),
 (83254, 4535, 33, 50, 1, 50),
+(86750, 8134, 11, 50, 2, 100),
 (90659, 2842, 11, 50, 3, 150),
 (94093, 1919, 33, 50, 2, 100),
 (96026, 7254, 11, 50, 2, 100),
@@ -183,8 +193,33 @@ INSERT INTO `staffs` (`StaffID`, `StaffCode`, `StaffName`, `Gender`, `StaffPassw
 (1, '123', 'c1', 'F', '001', 'Staff'),
 (2, '456', 'coffee2', 'F', '002', 'Manager'),
 (3, '789', 'coffee3', 'M', '003', 'Admin'),
-(2129, '234', 'rew', 'M', '004', 'Staff'),
-(5210, '675', 'toot', 'M', '123456', 'Staff');
+(1314, '861', 'popy', 'M', '011', 'Staff'),
+(2319, '586', 'man', 'F', '099', 'Manager');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `staffs1`
+--
+
+CREATE TABLE `staffs1` (
+  `StaffID.` int(11) NOT NULL,
+  `StaffCode` int(20) NOT NULL,
+  `StaffName` varchar(100) NOT NULL,
+  `Gender` enum('M','F') NOT NULL,
+  `StaffLevel` enum('Staff','Manager','Admin') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `staffs1`
+--
+
+INSERT INTO `staffs1` (`StaffID.`, `StaffCode`, `StaffName`, `Gender`, `StaffLevel`) VALUES
+(1, 123, 'c1', 'F', 'Staff'),
+(2, 456, 'coffee2', 'F', 'Manager'),
+(3, 789, 'coffee3', 'M', 'Admin'),
+(1314, 861, 'popy', 'M', 'Staff'),
+(2319, 586, 'man', 'F', 'Manager');
 
 --
 -- Indexes for dumped tables
@@ -228,6 +263,12 @@ ALTER TABLE `staffs`
   ADD UNIQUE KEY `StaffCode` (`StaffCode`);
 
 --
+-- Indexes for table `staffs1`
+--
+ALTER TABLE `staffs1`
+  ADD PRIMARY KEY (`StaffID.`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -265,7 +306,7 @@ ALTER TABLE `sale_details`
 -- AUTO_INCREMENT for table `staffs`
 --
 ALTER TABLE `staffs`
-  MODIFY `StaffID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5211;
+  MODIFY `StaffID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8367;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
