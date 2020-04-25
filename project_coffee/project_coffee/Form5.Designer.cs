@@ -51,9 +51,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.data2 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.data3 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataG1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -273,6 +273,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "staffs";
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(286, 452);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(123, 36);
+            this.button5.TabIndex = 50;
+            this.button5.Text = "Check";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // data3
             // 
             this.data3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -295,17 +306,6 @@
             this.groupBox3.TabIndex = 45;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ลูกค้า";
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(286, 452);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(123, 36);
-            this.button5.TabIndex = 50;
-            this.button5.Text = "Check";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 

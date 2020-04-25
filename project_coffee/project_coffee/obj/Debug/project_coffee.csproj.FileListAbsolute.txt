@@ -39,3 +39,31 @@ C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\ob
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form10.resources
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form11.resources
 C:\Users\Asus\Desktop\New folder\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form6.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\project_coffee.exe.config
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\project_coffee.exe
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\project_coffee.pdb
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\MySql.Data.dll
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\MySql.Web.dll
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\Google.Protobuf.dll
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\Renci.SshNet.dll
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\MySql.Data.xml
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\bin\Debug\MySql.Web.xml
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form1.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form10.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form11.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form2.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form3.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form4.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form5.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form6.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form7.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form8.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form9.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Properties.Resources.resources
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.csproj.CopyComplete
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.exe
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.pdb
