@@ -67,3 +67,4 @@ C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_c
 C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.csproj.CopyComplete
 C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.exe
 C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.pdb
+C:\Users\Asus\Desktop\Git_Project_Coffee\Project_Coffee\project_coffee\project_coffee\obj\Debug\project_coffee.Form12.resources

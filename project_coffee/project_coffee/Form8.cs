@@ -35,7 +35,7 @@ namespace project_coffee
                 loo1.GetData(SensData());
                 loo1.GetData1(SensData1());
                 loo1.GetData2(SensData2());
-
+                loo1.GetData3(SensData3());
             }
 
             
@@ -53,6 +53,11 @@ namespace project_coffee
         }
 
         public string SensData2()
+        {
+            return txtUserName.Text;
+        }
+
+        public string SensData3()
         {
             return txtUserName.Text;
         }

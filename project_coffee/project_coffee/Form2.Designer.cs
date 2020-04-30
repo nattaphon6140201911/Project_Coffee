@@ -69,6 +69,12 @@
             this.button9 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.g1 = new System.Windows.Forms.TextBox();
+            this.g2 = new System.Windows.Forms.TextBox();
+            this.g3 = new System.Windows.Forms.TextBox();
+            this.k1 = new System.Windows.Forms.TextBox();
+            this.k2 = new System.Windows.Forms.TextBox();
+            this.k3 = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -248,7 +254,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(944, 383);
+            this.numericUpDown2.Location = new System.Drawing.Point(956, 385);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             10,
             0,
@@ -337,31 +343,31 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(860, 385);
+            this.label5.Location = new System.Drawing.Point(902, 384);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 17);
+            this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 34;
-            this.label5.Text = "50 Baht";
+            this.label5.Text = "Baht";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(481, 385);
+            this.label6.Location = new System.Drawing.Point(521, 386);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 17);
+            this.label6.Size = new System.Drawing.Size(48, 17);
             this.label6.TabIndex = 35;
-            this.label6.Text = "50 Baht";
+            this.label6.Text = "Baht";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(115, 384);
+            this.label7.Location = new System.Drawing.Point(165, 386);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 17);
+            this.label7.Size = new System.Drawing.Size(48, 17);
             this.label7.TabIndex = 36;
-            this.label7.Text = "50 Baht";
+            this.label7.Text = "Baht";
             // 
             // button10
             // 
@@ -447,12 +453,60 @@
             this.numericUpDown4.Size = new System.Drawing.Size(39, 22);
             this.numericUpDown4.TabIndex = 44;
             // 
+            // g1
+            // 
+            this.g1.Location = new System.Drawing.Point(122, 385);
+            this.g1.Name = "g1";
+            this.g1.Size = new System.Drawing.Size(33, 22);
+            this.g1.TabIndex = 45;
+            // 
+            // g2
+            // 
+            this.g2.Location = new System.Drawing.Point(484, 385);
+            this.g2.Name = "g2";
+            this.g2.Size = new System.Drawing.Size(33, 22);
+            this.g2.TabIndex = 46;
+            // 
+            // g3
+            // 
+            this.g3.Location = new System.Drawing.Point(863, 382);
+            this.g3.Name = "g3";
+            this.g3.Size = new System.Drawing.Size(33, 22);
+            this.g3.TabIndex = 47;
+            // 
+            // k1
+            // 
+            this.k1.Location = new System.Drawing.Point(182, 102);
+            this.k1.Name = "k1";
+            this.k1.Size = new System.Drawing.Size(103, 22);
+            this.k1.TabIndex = 48;
+            // 
+            // k2
+            // 
+            this.k2.Location = new System.Drawing.Point(550, 102);
+            this.k2.Name = "k2";
+            this.k2.Size = new System.Drawing.Size(103, 22);
+            this.k2.TabIndex = 49;
+            // 
+            // k3
+            // 
+            this.k3.Location = new System.Drawing.Point(934, 102);
+            this.k3.Name = "k3";
+            this.k3.Size = new System.Drawing.Size(103, 22);
+            this.k3.TabIndex = 50;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1202, 953);
+            this.Controls.Add(this.k3);
+            this.Controls.Add(this.k2);
+            this.Controls.Add(this.k1);
+            this.Controls.Add(this.g3);
+            this.Controls.Add(this.g2);
+            this.Controls.Add(this.g1);
             this.Controls.Add(this.numericUpDown4);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox1);
@@ -536,5 +590,11 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.TextBox g1;
+        private System.Windows.Forms.TextBox g2;
+        private System.Windows.Forms.TextBox g3;
+        private System.Windows.Forms.TextBox k1;
+        private System.Windows.Forms.TextBox k2;
+        private System.Windows.Forms.TextBox k3;
     }
 }

@@ -18,6 +18,7 @@ namespace project_coffee
             InitializeComponent();
             groupBox2.Visible = false;
             groupBox3.Visible = false;
+            groupBox4.Visible = false;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -107,6 +108,20 @@ namespace project_coffee
             data3.DataSource = ds.Tables[0].DefaultView;
         }
 
+        public void GetData3(string str)
+        {
+            string sql5 = "SELECT * FROM products";
+
+            MySqlConnection con5 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd5 = new MySqlCommand(sql5, con5);
+            con5.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd5);
+            da.Fill(ds);
+            dat6.DataSource = ds.Tables[0].DefaultView;
+        }
+
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             
@@ -149,8 +164,15 @@ namespace project_coffee
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form11 rr = new Form11();
-            rr.Show();
+            string sql = "Admin";
+
+            if (sql == lbl_Lv.Text)
+            {
+                Form11 rr = new Form11();
+                rr.Show();
+            }
+
+                
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -158,6 +180,7 @@ namespace project_coffee
             groupBox1.Visible = true;
             groupBox2.Visible = false;
             groupBox3.Visible = false;
+            groupBox4.Visible = false;
 
         }
 
@@ -166,6 +189,7 @@ namespace project_coffee
             groupBox1.Visible = false;
             groupBox2.Visible = true;
             groupBox3.Visible = false;
+            groupBox4.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -173,6 +197,7 @@ namespace project_coffee
             groupBox1.Visible = false;
             groupBox2.Visible = false;
             groupBox3.Visible = true;
+            groupBox4.Visible = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -201,6 +226,39 @@ namespace project_coffee
             MySqlDataAdapter da = new MySqlDataAdapter(cmd5);
             da.Fill(ds);
             data3.DataSource = ds.Tables[0].DefaultView;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            string sql5 = "SELECT * FROM products";
+
+            MySqlConnection con5 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd5 = new MySqlCommand(sql5, con5);
+            con5.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd5);
+            da.Fill(ds);
+            dat6.DataSource = ds.Tables[0].DefaultView;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+            groupBox2.Visible = false;
+            groupBox3.Visible = false;
+            groupBox4.Visible = true;
+        }
+
+        private void dat6_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Form12 oo = new Form12();
+            oo.Show();
         }
     }    
 }

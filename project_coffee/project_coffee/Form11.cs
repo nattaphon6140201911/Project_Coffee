@@ -31,38 +31,29 @@ namespace project_coffee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql1 = "SELECT * FROM staffs WHERE StaffPassword ='" + textBox5.Text + "'AND StaffLevel = 'Admin' ";
-            MySqlConnection con1 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
-            MySqlCommand cmd1 = new MySqlCommand(sql1, con1);
-            con1.Open();
-            MySqlDataReader reader = cmd1.ExecuteReader();
-
-            while (reader.Read())
-            {
-                string sql2 = "SELECT * FROM staffs1";
-                /*sql2 = "INSERT INTO staffs1 (StaffID.,StaffCode,StaffName,Gender,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + comboBox2.Text + "')";*/
-                sql2 = "INSERT INTO `staffs1`(`StaffID.`, `StaffCode`, `StaffName`, `Gender`, `StaffLevel`) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + comboBox1.Text + "', '" + comboBox2.Text + "')";
-                MySqlConnection con2 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
-                MySqlCommand cmd2 = new MySqlCommand(sql2, con2);
-                con2.Open();
-                cmd2.ExecuteNonQuery();
-                con2.Close();
+            string sql2 = "SELECT * FROM staffs1";
+            /*sql2 = "INSERT INTO staffs1 (StaffID.,StaffCode,StaffName,Gender,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + comboBox2.Text + "')";*/
+            sql2 = "INSERT INTO `staffs1`(`StaffID.`, `StaffCode`, `StaffName`, `Gender`, `StaffLevel`) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + comboBox1.Text + "', '" + comboBox2.Text + "')";
+            MySqlConnection con2 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd2 = new MySqlCommand(sql2, con2);
+            con2.Open();
+            cmd2.ExecuteNonQuery();
+            con2.Close();
 
 
-                string sql = "SELECT * FROM staffs";
-                sql = "INSERT INTO staffs (StaffID,StaffCode,StaffName,Gender,StaffPassword,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + textBox4.Text + "','" + comboBox2.Text + "')";
+            string sql = "SELECT * FROM staffs";
+            sql = "INSERT INTO staffs (StaffID,StaffCode,StaffName,Gender,StaffPassword,StaffLevel) VALUES('" + textBox1.Text + " ','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + textBox4.Text + "','" + comboBox2.Text + "')";
 
-                MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
-                MySqlCommand cmd = new MySqlCommand(sql, con);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("สมัครสำเร็จ");
-                this.Hide();
-            }
+            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("สมัครสำเร็จ");
+            this.Hide();
 
 
-            
+
         }
 
         private void button5_Click(object sender, EventArgs e)
