@@ -75,6 +75,12 @@
             this.k1 = new System.Windows.Forms.TextBox();
             this.k2 = new System.Windows.Forms.TextBox();
             this.k3 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.k4 = new System.Windows.Forms.TextBox();
+            this.g4 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -82,13 +88,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(863, 130);
+            this.button2.Location = new System.Drawing.Point(669, 130);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(233, 248);
             this.button2.TabIndex = 1;
@@ -99,7 +107,7 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(484, 130);
+            this.button3.Location = new System.Drawing.Point(393, 130);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(233, 248);
             this.button3.TabIndex = 2;
@@ -254,7 +262,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(956, 385);
+            this.numericUpDown2.Location = new System.Drawing.Point(762, 385);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             10,
             0,
@@ -266,7 +274,7 @@
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(575, 385);
+            this.numericUpDown3.Location = new System.Drawing.Point(484, 385);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             10,
             0,
@@ -279,39 +287,43 @@
             // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(281, 383);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(44, 35);
             this.button8.TabIndex = 15;
             this.button8.Text = "สั่ง";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.Color.White;
             this.button11.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(1016, 383);
+            this.button11.Location = new System.Drawing.Point(822, 383);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(44, 33);
             this.button11.TabIndex = 18;
             this.button11.Text = "สั่ง";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
+            this.button12.BackColor = System.Drawing.Color.White;
             this.button12.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(649, 384);
+            this.button12.Location = new System.Drawing.Point(558, 384);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(44, 35);
             this.button12.TabIndex = 19;
             this.button12.Text = "สั่ง";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // dataG
             // 
+            this.dataG.BackgroundColor = System.Drawing.Color.White;
             this.dataG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataG.Location = new System.Drawing.Point(48, 473);
             this.dataG.Name = "dataG";
@@ -322,13 +334,14 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(305, 749);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(68, 31);
             this.button4.TabIndex = 30;
             this.button4.Text = "ลบ";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // textBox4
@@ -342,8 +355,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(902, 384);
+            this.label5.Location = new System.Drawing.Point(708, 384);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 34;
@@ -352,8 +366,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(521, 386);
+            this.label6.Location = new System.Drawing.Point(430, 386);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 17);
             this.label6.TabIndex = 35;
@@ -362,6 +377,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(165, 386);
             this.label7.Name = "label7";
@@ -371,13 +387,14 @@
             // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.Color.White;
             this.button10.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(421, 753);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(123, 36);
             this.button10.TabIndex = 37;
             this.button10.Text = "Check";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click_2);
             // 
             // CustomerID
@@ -391,7 +408,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(565, 243);
+            this.textBox1.Location = new System.Drawing.Point(474, 243);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(108, 22);
             this.textBox1.TabIndex = 38;
@@ -406,6 +423,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(636, 688);
             this.label1.Name = "label1";
@@ -425,18 +443,19 @@
             // 
             // button9
             // 
+            this.button9.BackColor = System.Drawing.Color.White;
             this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.Location = new System.Drawing.Point(934, 29);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(58, 57);
             this.button9.TabIndex = 42;
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click_2);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(897, 252);
+            this.dateTimePicker1.Location = new System.Drawing.Point(703, 252);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(139, 22);
             this.dateTimePicker1.TabIndex = 43;
@@ -462,14 +481,14 @@
             // 
             // g2
             // 
-            this.g2.Location = new System.Drawing.Point(484, 385);
+            this.g2.Location = new System.Drawing.Point(393, 385);
             this.g2.Name = "g2";
             this.g2.Size = new System.Drawing.Size(33, 22);
             this.g2.TabIndex = 46;
             // 
             // g3
             // 
-            this.g3.Location = new System.Drawing.Point(863, 382);
+            this.g3.Location = new System.Drawing.Point(669, 382);
             this.g3.Name = "g3";
             this.g3.Size = new System.Drawing.Size(33, 22);
             this.g3.TabIndex = 47;
@@ -483,24 +502,93 @@
             // 
             // k2
             // 
-            this.k2.Location = new System.Drawing.Point(550, 102);
+            this.k2.Location = new System.Drawing.Point(459, 102);
             this.k2.Name = "k2";
             this.k2.Size = new System.Drawing.Size(103, 22);
             this.k2.TabIndex = 49;
             // 
             // k3
             // 
-            this.k3.Location = new System.Drawing.Point(934, 102);
+            this.k3.Location = new System.Drawing.Point(740, 102);
             this.k3.Name = "k3";
             this.k3.Size = new System.Drawing.Size(103, 22);
             this.k3.TabIndex = 50;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox2.Location = new System.Drawing.Point(943, 130);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(233, 248);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 51;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
+            // 
+            // k4
+            // 
+            this.k4.Location = new System.Drawing.Point(1015, 102);
+            this.k4.Name = "k4";
+            this.k4.Size = new System.Drawing.Size(103, 22);
+            this.k4.TabIndex = 52;
+            // 
+            // g4
+            // 
+            this.g4.Location = new System.Drawing.Point(965, 384);
+            this.g4.Name = "g4";
+            this.g4.Size = new System.Drawing.Size(33, 22);
+            this.g4.TabIndex = 56;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1004, 386);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Baht";
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.White;
+            this.button13.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Location = new System.Drawing.Point(1118, 385);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(44, 33);
+            this.button13.TabIndex = 54;
+            this.button13.Text = "สั่ง";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click_1);
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Location = new System.Drawing.Point(1058, 387);
+            this.numericUpDown5.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(39, 22);
+            this.numericUpDown5.TabIndex = 53;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1202, 953);
+            this.Controls.Add(this.g4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.numericUpDown5);
+            this.Controls.Add(this.k4);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.k3);
             this.Controls.Add(this.k2);
             this.Controls.Add(this.k1);
@@ -545,6 +633,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -596,5 +686,11 @@
         private System.Windows.Forms.TextBox k1;
         private System.Windows.Forms.TextBox k2;
         private System.Windows.Forms.TextBox k3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox k4;
+        private System.Windows.Forms.TextBox g4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.NumericUpDown numericUpDown5;
     }
 }

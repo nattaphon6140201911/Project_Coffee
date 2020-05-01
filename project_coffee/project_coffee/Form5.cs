@@ -171,8 +171,11 @@ namespace project_coffee
                 Form11 rr = new Form11();
                 rr.Show();
             }
+            else
+            {
+                MessageBox.Show("ไม่ได้รับอนุญาต");
+            }
 
-                
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -258,6 +261,27 @@ namespace project_coffee
         private void button12_Click(object sender, EventArgs e)
         {
             Form12 oo = new Form12();
+            oo.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string sql = "Admin";
+
+            if (sql == lbl_Lv.Text)
+            {
+                Form14 rr = new Form14();
+                rr.Show();
+            }
+            else
+            {
+                MessageBox.Show("ไม่ได้รับอนุญาต");
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Form13 oo = new Form13();
             oo.Show();
         }
     }    
