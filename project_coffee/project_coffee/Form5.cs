@@ -284,5 +284,53 @@ namespace project_coffee
             Form13 oo = new Form13();
             oo.Show();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM staffs WHERE StaffName LIKE  '%" + b1.Text + "%' ";
+
+            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            con.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(ds);
+            data2.DataSource = ds.Tables[0].DefaultView;
+
+            con.Close();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM products WHERE ProductID LIKE  '%" + b2.Text + "%' ";
+
+            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            con.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(ds);
+            dat6.DataSource = ds.Tables[0].DefaultView;
+
+            con.Close();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM customers WHERE CustomerName LIKE  '%" + b3.Text + "%' ";
+
+            MySqlConnection con = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            con.Open();
+
+            DataSet ds = new DataSet();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(ds);
+            data3.DataSource = ds.Tables[0].DefaultView;
+
+            con.Close();
+        }
     }    
 }

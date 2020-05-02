@@ -43,6 +43,7 @@ namespace project_coffee
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("ลบออกแล้ว");
+            this.Close();
         }
 
         private void button8_Click(object sender, EventArgs e)

@@ -62,6 +62,12 @@
             this.button12 = new System.Windows.Forms.Button();
             this.dat6 = new System.Windows.Forms.DataGridView();
             this.button11 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.b1 = new System.Windows.Forms.TextBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.b2 = new System.Windows.Forms.TextBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.b3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataG1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -120,7 +126,7 @@
             this.lbl_Lv});
             this.statusStrip1.Location = new System.Drawing.Point(0, 688);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(736, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(737, 26);
             this.statusStrip1.TabIndex = 39;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -175,7 +181,7 @@
             // 
             // CustomerID
             // 
-            this.CustomerID.Location = new System.Drawing.Point(496, 106);
+            this.CustomerID.Location = new System.Drawing.Point(445, 3);
             this.CustomerID.Multiline = true;
             this.CustomerID.Name = "CustomerID";
             this.CustomerID.Size = new System.Drawing.Size(170, 26);
@@ -185,7 +191,7 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(688, 100);
+            this.button1.Location = new System.Drawing.Point(644, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 34);
             this.button1.TabIndex = 41;
@@ -220,6 +226,8 @@
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.dataG1);
             this.groupBox1.Controls.Add(this.button10);
+            this.groupBox1.Controls.Add(this.CustomerID);
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 180);
             this.groupBox1.Name = "groupBox1";
@@ -280,10 +288,12 @@
             this.groupBox2.Controls.Add(this.button14);
             this.groupBox2.Controls.Add(this.data2);
             this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.b1);
+            this.groupBox2.Controls.Add(this.button15);
             this.groupBox2.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 180);
+            this.groupBox2.Location = new System.Drawing.Point(11, 179);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(712, 493);
+            this.groupBox2.Size = new System.Drawing.Size(712, 500);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "staffs";
@@ -325,11 +335,13 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.button17);
             this.groupBox3.Controls.Add(this.button13);
             this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.b3);
             this.groupBox3.Controls.Add(this.data3);
             this.groupBox3.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(11, 174);
+            this.groupBox3.Location = new System.Drawing.Point(11, 165);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(712, 499);
             this.groupBox3.TabIndex = 45;
@@ -378,8 +390,10 @@
             this.groupBox4.Controls.Add(this.button12);
             this.groupBox4.Controls.Add(this.dat6);
             this.groupBox4.Controls.Add(this.button11);
+            this.groupBox4.Controls.Add(this.b2);
+            this.groupBox4.Controls.Add(this.button16);
             this.groupBox4.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(10, 165);
+            this.groupBox4.Location = new System.Drawing.Point(11, 165);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(712, 493);
             this.groupBox4.TabIndex = 51;
@@ -421,6 +435,63 @@
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // button15
+            // 
+            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button15.Location = new System.Drawing.Point(644, 1);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(35, 34);
+            this.button15.TabIndex = 53;
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // b1
+            // 
+            this.b1.Location = new System.Drawing.Point(445, 8);
+            this.b1.Multiline = true;
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(170, 26);
+            this.b1.TabIndex = 52;
+            // 
+            // button16
+            // 
+            this.button16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button16.BackgroundImage")));
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button16.Location = new System.Drawing.Point(656, 0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(35, 34);
+            this.button16.TabIndex = 55;
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // b2
+            // 
+            this.b2.Location = new System.Drawing.Point(464, 6);
+            this.b2.Multiline = true;
+            this.b2.Name = "b2";
+            this.b2.Size = new System.Drawing.Size(170, 26);
+            this.b2.TabIndex = 54;
+            // 
+            // button17
+            // 
+            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button17.Location = new System.Drawing.Point(658, 0);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(35, 34);
+            this.button17.TabIndex = 57;
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // b3
+            // 
+            this.b3.Location = new System.Drawing.Point(465, 3);
+            this.b3.Multiline = true;
+            this.b3.Name = "b3";
+            this.b3.Size = new System.Drawing.Size(170, 26);
+            this.b3.TabIndex = 56;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -428,17 +499,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(736, 714);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.button8);
+            this.ClientSize = new System.Drawing.Size(737, 714);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.CustomerID);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
@@ -450,11 +519,15 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data2)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data3)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dat6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -496,5 +569,11 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.TextBox b1;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.TextBox b2;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.TextBox b3;
     }
 }

@@ -43,8 +43,8 @@ namespace project_coffee
             con.Close();
 
 
-            string sql1 = "SELECT * FROM staffs1";
-            sql1 = "DELETE FROM staffs1 WHERE StaffID. = '" + v4.Text + "' ";
+            string sql1 = "SELECT * FROM `staffs1`";
+            sql1 = "DELETE FROM `staffs1` WHERE `StaffID.` = '" + v4.Text + "' ";
 
             MySqlConnection con1 = new MySqlConnection("host=localhost;user=root;password=25252542;database=coffee_project");
             MySqlCommand cmd1 = new MySqlCommand(sql1, con1);
@@ -54,6 +54,7 @@ namespace project_coffee
             con1.Close();
 
             MessageBox.Show("ลบออกแล้ว");
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
